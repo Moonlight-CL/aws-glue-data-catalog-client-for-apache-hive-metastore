@@ -188,6 +188,10 @@ public class AWSCatalogMetastoreClient implements IMetaStoreClient {
     }
   }
 
+  public AWSCatalogMetastoreClient(Configuration conf, HiveMetaHookLoader hook, Boolean noUsed) throws MetaException {
+    this(conf, hook);
+  }
+
   /**
    * Currently used for unit tests
    */
